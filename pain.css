@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh;
+    margin:0;
+    line-height:1.8em;
+    background-color: #000000;
+}
+
+.hidden{
+  opacity: 0;
+  transition: 2s;
+}
+
+.show{
+  opacity: 1;
+}
+
+.heading{
+    /* background-color: #FE5000 ; */
+    color: #FE5000;
+    padding: 1px 50px;
+    border-radius: 10px;
+    font-family: 'Castoro Titling', cursive;
+    transition: 0.5s;
+    scale: 150%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.heading:hover{
+    color: white;
+    background-color: #FE5000;
+}
+
+.heading:hover span{
+    color: black;
+}
+
+.PAIN{
+    color: rgb(0, 0, 0);
+    font-family: 'Vina Sans', cursive;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.banner{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    width: 100%;
+  }
+
+  .banner{
+    margin-top: 100px;
+    min-height:  400px;
+    margin-bottom: 100px;
+  }
+
+  .banner1{
+    background-image: url(Page_2_images/1929635.png);
+    margin: 0;
+  }
+
+  .banner2{
+    background-image:url(Page_2_images/pain__deva_path__wallpaper__naruto_ol__by_maxiuchiha22_ddod73i.png);
+  }
+
+  .banner3{
+    background-image: url(Page_2_images/pain__asura_path__wallpaper__naruto_ol__by_maxiuchiha22_ddod737.png);
+  }
+
+  .banner4{
+    background-image: url(Page_2_images/pain__human_path__wallpaper__naruto_ol__by_maxiuchiha22_ddod73v.png);
+  }
+
+  .banner5{
+    background-image: url(Page_2_images/ANIME-PICTURES.NET_-_259958-1000x563-naruto-studio+pierrot-pain+\(naruto\)-animal+path-raaa-kun-single.png);
+  }
+
+  .banner6{
+    background-image: url(Page_2_images/pain__preta_path__wallpaper__naruto_ol__by_maxiuchiha22_ddod74s.png);
+  }
+
+  .banner7{
+    background-image: url(Page_2_images/pain__naraka_path__wallpaper__naruto_ol__by_maxiuchiha22_ddod74b.png);
+  }
+
+  .banner-text {
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#ffffff;
+    font-size:27px;
+    font-weight: 800;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .border{
+    background-color: #ffffff;
+    color:#000000;
+    padding:20px;
+    border-radius: 20px;
+  }
+ 
+
+  .row {
+    justify-content: space-evenly;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;   
+    width: 100%;
+}
+
+.cardBox{
+    width: 95%;
+    background-color: #000000;
+    padding: 0px 20px;
+    border-radius: 20px;
+    padding-bottom: 100px;
+}
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; 
+    font-family: 'Instrument Serif', serif; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    background-color: white;
+    border-radius: 20px;
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    scale: 120%;
+    box-shadow: 10px 10px 10px hsla(0, 0%, 100%, 0.39);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-inner div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+h3 {
+    background-color: #FE5000;
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+  .card1 {
+    background-image: url(Page_2_images/deva-path.png);
+  }
+  
+  .card1-back {
+    background-image: url(Page_2_images/pain___deva_path_render_3__ultimate_ninja_blazing__by_maxiuchiha22_dcpumuq.png);
+    color: white;
+    transform: rotateY(180deg);
+    background-size: 450px !important ;
+    opacity: 0.7;
+  }
+
+  .card2 {
+    background-image: url(Page_2_images/asura-path.png);
+  }
+  
+  .card2-back {
+    background-image: url(Page_2_images/pain___asura_path_render__ultimate_ninja_blazing__by_maxiuchiha22_dcokvjd.png);
+    color: white;
+    transform: rotateY(180deg);
+    background-size: 500px !important ;
+    opacity: 0.7;
+  }
+
+  .card3 {
+    background-image: url(Page_2_images/Human-path.webp);
+  }
+  
+  .card3-back {
+    background-image: url(Page_2_images/pain_human_path_render_2__ultimate_ninja_blazing__by_maxiuchiha22_dct5qmj.png);
+    color: white;
+    transform: rotateY(180deg);
+    background-size: 500px !important ;
+    opacity: 0.7;
+  }
+
+  .card4 {
+    background-image: url(Page_2_images/pain___animal_path_render_2__naruto_mobile__by_maxiuchiha22_dd0a7km.png);
+    background-size: 400px !important;
+  }
+  
+  .card4-back {
+    background-image: url(Page_2_images/animal_path_one_of_the_six_path_of_pain_by_bodskih_dclzp81.png);
+    color: white;
+    transform: rotateY(180deg);
+    background-size: 400px !important ;
+    opacity: 0.7;
+  }
+
+  .card5 {
+    background-image: url(Page_2_images/pain___preta_path_render_2__naruto_mobile__by_maxiuchiha22_dd0a7lf.png);
+    background-size: 500px !important;
+    max-height: 400px;
+  }
+  
+  .card5-back {
+    background-image: url(Page_2_images/pain___preta_path_render__ultimate_ninja_blazing__by_maxiuchiha22_dcob4y2.png);
+    color: white;
+    transform: rotateY(180deg);
+    background-size: 500px !important ;
+    opacity: 0.7;
+  }
+
+  .card6 {
+    background-image: url(Page_2_images/pain_naraka_path_render__naruto_mobile__by_maxiuchiha22_dczilje.png);
+    max-height: 400px;
+    background-size: 400px !important;
+  }
+  
+  .card6-back {
+    background-image: url(Page_2_images/pain_naraka_path_render_2__ultimate_ninja_blazing__by_maxiuchiha22_dcpumu7.png);
+    color: white;
+    transform: rotateY(180deg);
+    background-size: 450px !important ;
+    opacity: 0.7;
+  }
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.navbar{
+  /* padding-top: 20px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.logo{
+  width: 12%;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.navList{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  align-items: center;
+  margin: 0;
+  background-color: #FE5000;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5%;
+  list-style: none;
+  width: 88%;
+}
+
+.navList li{
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.divider{
+  width: 1px;
+  background-color: white;
+  height: 80%;
+}
+
+.eyes {
+  animation: blink 2.4s infinite;
+  animation-delay: 2s;
+  /* top: -50px; */
+    /* border-bottom:15px inset #000; */
+}
+
+/* @keyframes blink {
+
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(20px) scaleY(0)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+} */
+
+@keyframes blink {
+  0% {
+    transform:scale(1);
+  }
+  5% { transform:scale(1,0) }
+  10% {
+    transform:scale(1)
+  }
+}
+
+footer{
+  margin-top: 50px;
+  height: 200px;
+  background-color: #ffffff87;
+  width: 100%;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.social-icons-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.social-icons img {
+  max-height: 50px;
+  max-height: 50px;
+  margin-right: 80px;
+  transition: all 0.2s;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.instagram:hover{
+  border-radius: 999px;
+}
+.github:hover{
+  border-radius: 999px;
+}
+.youtube:hover{
+  border-radius: 999px;
+}
+.twitter:hover{
+  border-radius: 999px;
+}
+.facebook:hover{
+  border-radius: 999px;
+}
+.social-icons img:hover{
+  scale: 150%;
+}
